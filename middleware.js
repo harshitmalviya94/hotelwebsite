@@ -62,7 +62,7 @@ module.exports.validateReview = (req,res,next)=>{
 module.exports.isReviewAuthor= async (req,res,next)=>{
     const {reviewId ,id}=req.params;
     let review = await Review.findById(reviewId);
-    if(!review.author.equals(res.locals.currentUser._id)){
+    if(!review.author.equals(res.locals.currUser._id)){
         req.flash("error","you do not have permission to delete this review");
         return res.redirect(`/listings/${id}`);
     }

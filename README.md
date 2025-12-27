@@ -1,4 +1,4 @@
-# Wanderlust - Airbnb Clone
+# Airbnb Clone
 
 A full-stack web application for listing and reviewing travel accommodations, built with Node.js, Express, and MongoDB.
 
